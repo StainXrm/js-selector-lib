@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='./js/easyselect.js'></script>
+    <title>JS-Selector-Fun</title>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+
+    <ul>
+        <li class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur.</li>
+        <li class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</li>
+        <li class="item3">Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, eos?
+        </li>
+        <li class="item4">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+            eos?</li>
+        <li class="item5">Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Non, eos?</li>
+    </ul>
+
+    <p class="nicetext">Fun fun fun fun!</p>
+
+    <style>
+        * {
+            color: wheat;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body,
+        html {
+            background-color: #333;
+
+        }
+
+        li.item5 {
+            color: aqua;
+        }
+    </style>
+
+    <script>
+        X("li").replace("Hello New World!").css("color")
+        X("li.item5").css("color")
+    </script>
+
+</body>
+
+</html>
