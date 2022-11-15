@@ -1,0 +1,23 @@
+{
+  "name": "js-selector-lib",
+  "version": "1.0.0",
+  "description": "simple jQuery like elem selector -WIP-",
+  "main": "src/easyselect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StainXrm/js-selector-lib.git"
+  },
+  "keywords": [
+    "Selector",
+    "WIP"
+  ],
+  "author": "Stainx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StainXrm/js-selector-lib/issues"
+  },
+  "homepage": "https://github.com/StainXrm/js-selector-lib#readme"
+}
