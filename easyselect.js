@@ -1,4 +1,4 @@
-window.X = (arg) => {
+export function X(arg) {
     let selects = document.querySelectorAll(arg)
     // let selectArr = Array.from(selects);
     return new DOMNodes(selects);
@@ -31,8 +31,6 @@ class DOMNodes {
         return this;
     }
 
-
-
     empty() {
         this.htmlArr.forEach(function (element) {
             element.innerHTML = "";
@@ -40,3 +38,5 @@ class DOMNodes {
         return this;
     }
 }
+
+// console.log(X())

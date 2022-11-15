@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-    <script type='text/javascript' src='./js/easyselect.js'></script>
+    <script type='module' src='easyselect.js'></script>
     <title>JS-Selector-Fun</title>
 </head>
 
@@ -29,24 +29,21 @@
 
     <style>
         * {
-            color: wheat;
+            color: rgb(150, 150, 150);
             font-family: 'Montserrat', sans-serif;
         }
 
         body,
         html {
-            background-color: #333;
-
-        }
-
-        li.item5 {
-            color: aqua;
+            background-color: rgb(27, 27, 27);
         }
     </style>
 
-    <script>
-        X("li").replace("Hello New World!").css("color")
-        X("li.item5").css("color")
+    <script type='module'>
+        import { X } from './easyselect.js';
+        X("li.item3").replace("Hello New World!").css("color", "cyan")
+        X("li.item3").css("color")
+        X("li.item4").css("color", "red")
     </script>
 
 </body>
