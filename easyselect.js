@@ -1,4 +1,4 @@
-export function X(arg) {
+export default function X(arg) {
     let selects = document.querySelectorAll(arg)
     // let selectArr = Array.from(selects);
     return new DOMNodes(selects);

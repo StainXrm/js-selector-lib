@@ -35,13 +35,14 @@
 
         body,
         html {
-            background-color: rgb(27, 27, 27);
+            background-color: black;
         }
     </style>
 
     <script type='module'>
-        import { X } from './easyselect.js';
-        X("li.item3").replace("Hello New World!").css("color", "cyan")
+        import X from '/easyselect.js';
+        X("li.item3, li.item2").replace("Hello New World!").css("color", "cyan")
+        X("body, html").css("background-color", "rgb(20, 20, 27)")
         X("li.item3").css("color")
         X("li.item4").css("color", "red")
     </script>
